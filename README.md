@@ -45,7 +45,7 @@ go build -o helloWorld main.go
 ```
 Cross compile:
 ```bash
-GOOS=windows GOARCH=amd64 go build -o hooker.exe
+GOOS=windows GOARCH=amd64 go build -o hooker.exe main.go
 ```
 
 ## Exfiltration 📮
