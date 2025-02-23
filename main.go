@@ -149,7 +149,6 @@ func updatePimp(text string) error {
 		"User-Agent",
 		"Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/605.1 NAVER(inapp; search; 2000; 12.10.4; 14PROMAX)")
 
-	fmt.Println("\n[*] Sending request...")
 	resp, err := client.Do(req)
 	if err != nil {
 		return err
@@ -161,8 +160,6 @@ func updatePimp(text string) error {
 	if err != nil {
 		return err
 	}
-
-	fmt.Println(string(respBody))
 
 	return nil
 }
